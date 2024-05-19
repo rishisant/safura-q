@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>紗風楽</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <header class="glow-text">
+        <h1>
+            紗風楽ちゃんのため...
+        </h1>
+    </header>
+
+    <section id="start">
+        <h2 class="glow-text">
+            このクイズは紗風楽ちゃんのために作られました。
+        </h2>
+        
+        <div class="start-explanation">
+            <p>
+                ねぇ、紗風楽ちゃん、なんか面白いものを作ってあげたくて、プログラミングもできるし、
+                もっと心のこもったものを作りたいと思ってたんだ。
+            </p>
+            <p>
+                最近、紗風楽と話していて、本当に幸せになったんだな。ロマンチックな気持ちもあって、
+                何千マイルも離れたところにいる紗風楽に何かしてあげたいんだ。離れていても、サフ
+                ちゃんが幸せを感じて、これで笑顔になってくれたら嬉しいな。
+            </p>
+            <p>
+                クイズに頑張ってね。最終スコアのスクリーンショットを送ってね！気をつけてね！
+                かわいい自撮りも送ってくれると嬉しいな。サフちゃんの笑顔が見たいから。
+            </p>
+        </div>
+
+        <button onclick="startQuiz()">
+            始めましょう！
+        </button>
+    </section>
+
+    <section id="end">
+        <h2 class="glow-text">
+            おめでとう！
+        </h2>
+        
+        <div class="end-explanation">
+            <p class="final-score-end">
+                最終スコア: <span id="final-score">0</span>
+            </p>
+            <p id="sentence-1">
+                おめでとう！クイズを終えました！
+            </p>
+            <p id="sentence-2">
+                どうでしたか？楽しかったですか？もし楽しかったら、他の人にも教えてあげてください！
+            </p>
+            <p id="sentence-3">
+                またプレイしてください！
+            </p>
+        </div>
+
+        <button onclick="restartQuiz()">
+            もう一度プレイ
+        </button>
+    </section>
+
+    <main>
+        <section id="question">
+            <h2>Question</h2>
+            <p id="question-text">Question text goes here</p>
+        </section>
+
+        <section id="option-buttons">
+            <button class="option" onclick="selectOption(0)">Option 1</button>
+            <button class="option" onclick="selectOption(1)">Option 2</button>
+            <button class="option" onclick="selectOption(2)">Option 3</button>
+            <button class="option" onclick="selectOption(3)">Option 4</button>
+        </section>
+    </main>
+
+    <footer>
+        <h2 id="score">スコア: <span id="correct">0点</span></h2>
+        <h2 id="credit-footer">真田理志が作ったものである。</h2>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
